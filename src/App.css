@@ -1,0 +1,111 @@
+/* App.css */
+
+.gap {
+    margin-bottom: 20px; /* Adjust this value to set the desired gap */
+}
+
+.middle {
+    /* Full height of the parent */
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking of elements */
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weather-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 300px;
+    height: 300px;
+}
+/* App.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.input-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputget {
+    padding: 10px;
+    width: 60%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.fetch {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    padding: 20px;
+}
+
+.weather-icon {
+    width: 150px;
+    height: 150px;
+}
+
+.weather-info {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.weather-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.gap {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.gap h2 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
