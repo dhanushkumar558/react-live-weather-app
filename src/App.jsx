@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './App.css';
 import Axios from "axios";
 import React, { useState } from "react";
@@ -34,7 +35,7 @@ export default function App() {
   return (
     <div className="container">
       <div className="header align-center">
-        <h1>Weather Forecast</h1>
+        <h1 className='head'>Weather Forecast</h1>
       </div>
       <div className="align-center input-section">
         <input
@@ -51,19 +52,19 @@ export default function App() {
           {data && (
             <>
               <div className="gap">
-                <h2>Humidity: {data.main.humidity}%</h2>
+                <h2 className="des leftright">Humidity: {data.main.humidity}%</h2>
               </div>
               <div className="gap">
-                <h2>Feels Like: {kelvinToCelsius(data.main.feels_like)}°C</h2>
+                <h2 className="des leftright">Feels Like: {kelvinToCelsius(data.main.feels_like)}°C</h2>
               </div>
               <div className="gap">
-                <h2>Wind Speed: {data.wind.speed} m/s </h2>
+                <h2 className="des leftright">Wind Speed: {data.wind.speed} m/s </h2>
               </div>
               <div className="gap">
-                <h2>Visibility: {data.visibility / 1000} km</h2>
+                <h2 className="des leftright">Visibility: {data.visibility / 1000} km</h2>
               </div>
               <div className="gap">
-                <h2>Long: {data.coord.lon} <br />Lat: {data.coord.lat}</h2>
+                <h2 className="des leftright">Long: {data.coord.lon} <br />Lat: {data.coord.lat}</h2>
               </div>
             </>
           )}
@@ -77,9 +78,9 @@ export default function App() {
                   alt="Weather Icon"
                   className="weather-icon"
                 />
-                <h1>{data.name}</h1>
-                <p>{data.weather[0].description}</p>
-                <p>{kelvinToCelsius(data.main.temp)}°C / {kelvinToFahrenheit(data.main.temp)}°F</p>
+                <h1 className='name'>{data.name}</h1>
+                <h2 className='des desonly'>{data.weather[0].description}</h2>
+                <h1 className='default'>{kelvinToCelsius(data.main.temp)}°C / {kelvinToFahrenheit(data.main.temp)}°F</h1>
               </>
             )}
           </div>
@@ -88,19 +89,19 @@ export default function App() {
           {data && (
             <>
               <div className="gap">
-                <h2>Sunrise: {unixToTimeString(data.sys.sunrise)} <br />Sunset: {unixToTimeString(data.sys.sunset)}</h2>
+                <h2 className="des leftright">Sunrise: {unixToTimeString(data.sys.sunrise)} <br />Sunset: {unixToTimeString(data.sys.sunset)}</h2>
               </div>
               <div className="gap">
-                <h2>Timezone: {data.timezone}</h2>
+                <h2 className="des leftright">Timezone: {data.timezone}</h2>
               </div>
               <div className="gap">
-                <h2>Pressure: {data.main.pressure} hPa</h2>
+                <h2 className="des leftright">Pressure: {data.main.pressure} hPa</h2>
               </div>
               <div className="gap">
-                <h2>Sea Level: {data.main.sea_level}m</h2>
+                <h2 className="des leftright">Sea Level: {data.main.sea_level}m</h2>
               </div>
-              <div className="gap">
-                <h2>Ground Level: {data.main.grnd_level} m</h2>
+              <div className="gap leftright">
+                <h2 className="des">Ground Level: {data.main.grnd_level} m</h2>
               </div>
             </>
           )}

@@ -1,4 +1,7 @@
 /* App.css */
+body{
+    background-color: skyblue;
+}
 
 .gap {
     margin-bottom: 20px; /* Adjust this value to set the desired gap */
@@ -10,6 +13,26 @@
     flex-direction: column; /* Ensure vertical stacking of elements */
     align-items: center;
     justify-content: center;
+}
+.head{
+    color: green;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.name
+{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.des
+{
+    color:darkblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+.desonly
+{
+    font-weight: 600;
 }
 
 .header {
@@ -56,6 +79,7 @@
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    border-radius: 30px;
 }
 
 .fetch {
@@ -66,6 +90,8 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-left: 20px;
+    border-radius: 30px;
 }
 
 .row {
@@ -107,5 +133,16 @@
 .gap h2 {
     font-size: 18px;
     margin: 5px 0;
+}
+.default
+{
+    color:firebrick;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.leftright
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
