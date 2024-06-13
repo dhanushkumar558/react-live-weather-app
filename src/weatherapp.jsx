@@ -1,7 +1,6 @@
 import './App.css';
 import Axios from "axios";
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Weather_App() {
   const KEY = "5d2368cbf4ca0f2a36d6b1c5ae9237ca";
@@ -17,15 +16,15 @@ function Weather_App() {
     } catch {
       alert("No city found so far");
     } finally {
-      setCity(''); // Clear the textbox here
+      setCity(''); 
     }
   };
 
-  // Convert Kelvin to Celsius and Fahrenheit
+  
   const kelvinToCelsius = (temp) => (temp - 273.15).toFixed(2);
   const kelvinToFahrenheit = (temp) => ((temp - 273.15) * 9 / 5 + 32).toFixed(2);
 
-  // Convert Unix timestamp to time string
+  
   const unixToTimeString = (unixTime) => {
     const date = new Date(unixTime * 1000);
     return date.toLocaleTimeString();
