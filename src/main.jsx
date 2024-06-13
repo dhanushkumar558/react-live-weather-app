@@ -5,4 +5,7 @@ import Weather_App from "./weatherapp.jsx";
 import App from "./App.jsx";
 
 // eslint-disable-next-line react/no-deprecated
-ReactDOM.render(<Weather_App />, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Initial render: Render an element to the root.
+root.render(<Weather_App />);
